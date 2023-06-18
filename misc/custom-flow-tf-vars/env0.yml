@@ -5,8 +5,10 @@ deploy:
     terraformInit:
       before:
         - echo TF_VAR_email=user@domain.com >> $ENV0_ENV
+        - cat env0.env-vars.json
       after:
-        - echo sagy
+        - echo $(cat env0.env-vars.json)
         - echo $ENV0_COMMIT_HASH
-        - echo $ENV0_SAG
+        - echo $MY_PROJECT_ID
+        - echo $MY_ENV_ID
         - echo $(env)
