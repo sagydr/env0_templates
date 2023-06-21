@@ -1,2 +1,2 @@
-resource "xxzznull_resource" "nulllllll" {
+resource "xxzznull_resource" "nulllllllxxx" {
 }
