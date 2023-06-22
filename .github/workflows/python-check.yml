@@ -1,5 +1,8 @@
 name: Python Check
-on: [check_suite]
+on:
+  push:
+    branches:
+      - sagy/test7
 
 jobs:
   python-check:
