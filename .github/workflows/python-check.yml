@@ -21,4 +21,4 @@ jobs:
       run: echo "::set-output name=check_run_id::${{ github.check_run.id }}" 
 
     - name: print check name
-      run: echo "check name: ${{github.check_run.name}}"
+      run: echo "::set-output name=check_run_name::${{ github.check_run.name }}"
