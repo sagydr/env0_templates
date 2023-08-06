@@ -8,6 +8,6 @@ resource "aws_instance" "example_server" {
   instance_type = var.instance_type
 
   tags = {
-    Name = "Sagyyyyyyy-forkk"
+    Name = "Sagyyyyyyy-forkk22222"
   }
 }
