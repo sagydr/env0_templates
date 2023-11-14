@@ -11,8 +11,12 @@ resource "random_string" "random" {
   min_lower = "16"
 }
 
+variable "bucket_name" {
+  type = string
+}
+
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "env0-s3-sagy"
+  bucket = var.bucket_name
   force_destroy = true
 }
 
