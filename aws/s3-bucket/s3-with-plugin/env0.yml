@@ -6,4 +6,5 @@ deploy:
         - name: SagPlugin
           use: https://github.com/sagydr/env0-sag-plugin
           inputs:
-            plan: $ENV0_TF_PLAN_JSON
+            plan: `cat $ENV0_TF_PLAN_JSON`
+            plan_path: $ENV0_TF_PLAN_JSON
