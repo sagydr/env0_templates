@@ -31,7 +31,7 @@ resource "aws_s3_bucket_public_access_block" "bucket_public_access_block" {
   bucket = aws_s3_bucket.website_bucket.id
 
   block_public_acls       = false
-  block_public_policy     = false
+  block_public_policy     = true
   ignore_public_acls      = true
   restrict_public_buckets = false
 }
@@ -44,7 +44,7 @@ resource "null_resource" "delay" {
   ]
 
   provisioner "local-exec" {
-    command = "sleep 4"
+    command = "sleep 6"
   }
 }
 
