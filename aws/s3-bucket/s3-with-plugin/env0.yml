@@ -1,0 +1,9 @@
+version: 2
+deploy:
+  steps:
+    terraformPlan:
+      after:
+        - name: SagPlugin
+          use: https://github.com/sagydr/env0-sag-plugin
+          inputs:
+            plan: $ENV0_TF_PLAN_JSON
