@@ -15,10 +15,6 @@ variable "bucket_name" {
   type = string
 }
 
-variable "random_varrrr" {
- type = string
-}
-
 resource "aws_s3_bucket" "website_bucket" {
   bucket = var.bucket_name
   force_destroy = true
@@ -36,7 +32,7 @@ resource "aws_s3_bucket_public_access_block" "bucket_public_access_block" {
 
   block_public_acls       = false
   block_public_policy     = false
-  ignore_public_acls      = false
+  ignore_public_acls      = true
   restrict_public_buckets = false
 }
 
@@ -48,7 +44,7 @@ resource "null_resource" "delay" {
   ]
 
   provisioner "local-exec" {
-    command = "sleep 5"
+    command = "sleep 4"
   }
 }
 
