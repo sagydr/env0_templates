@@ -15,7 +15,7 @@ variable "bucket_name" {
   type = string
 }
 
-variable "random_var" {
+variable "random_varrrr" {
  type = string
 }
 
