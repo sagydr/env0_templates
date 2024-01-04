@@ -5,3 +5,14 @@ deploy:
     terraformInit:
       before:
         - echo TF_VAR_email=user@domain.com >> $ENV0_ENV
+        - echo "sag init"
+    terraformApply:
+      before:
+        - echo "sag before"
+      after:
+        - cat "${ENV0_TF_PLAN_JSON}"
+        - st=$? && echo "status = ${st}"
+        - echo "sag after"
+        - echo `env`
+        - terraform state pull
+        - terraform state show
