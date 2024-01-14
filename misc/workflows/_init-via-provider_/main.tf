@@ -17,7 +17,7 @@ resource "env0_project" "workflows_project" {
 // workflow file in `complex_workflow` use this null template
 resource "env0_template" "null_template" {
   name        = "null"
-  repository  = "https://github.com/env0/templates"
+  repository  = "https://github.com/sagydr/env0_templates"
   path        = "misc/null-resource"
   type = "terraform"
   terraform_version = "1.5.7"
@@ -41,7 +41,7 @@ resource "env0_template" "complex_workflow" {
                                                 /
     secondRoot  -    secondRootFirstDependency -
   EOF
-  repository  = "https://github.com/env0/templates"
+  repository  = "https://github.com/sagydr/env0_templates"
   path        = "misc/workflows/graph-with-leaf-dependant-on-two-branches"
   type        = "workflow"
   revision    = "master"
