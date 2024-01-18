@@ -23,7 +23,7 @@ environments:
       - infraAppCommon
   packageActivity:
     name: "package-activity-with-custom-flow"
-    templateName: "null"
+    templateName: "null-with-custom-flow"
     workspace: ${WORKSPACE_NAME}-5
     needs:
       - infraAppCommon
