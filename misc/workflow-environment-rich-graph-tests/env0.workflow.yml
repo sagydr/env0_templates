@@ -6,6 +6,7 @@ environments:
   ui:
     name: "ui"
     templateName: "null"
+    revision: "asdasdasdtomtom"
     workspace: ${WORKSPACE_NAME}-2
     needs:
       - infraAppCommon
