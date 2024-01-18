@@ -22,9 +22,8 @@ environments:
     needs:
       - infraAppCommon
   packageActivity:
-    name: ${ENV_NAME}
-    templateName: "null"
-    revision: "asadasd-asdadsad"
+    name: "package-activity-with-custom-flow"
+    templateName: "null-with-custom-flow"
     workspace: ${WORKSPACE_NAME}-5
     needs:
       - infraAppCommon
