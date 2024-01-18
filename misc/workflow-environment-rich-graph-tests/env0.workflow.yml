@@ -24,7 +24,7 @@ environments:
   packageActivity:
     name: "package-activity"
     templateName: "null"
-    revision: ${BRANCH_NAME}
+    revision: "asadasd-asdadsad"
     workspace: ${WORKSPACE_NAME}-5
     needs:
       - infraAppCommon
