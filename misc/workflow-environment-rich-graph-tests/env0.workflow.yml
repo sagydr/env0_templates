@@ -24,8 +24,8 @@ environments:
   packageActivity:
     name: "package-activity"
     templateName: "null"
+    revision: ${BRANCH_NAME}
     workspace: ${WORKSPACE_NAME}-5
-    revision: ${BRANCH}
     needs:
       - infraAppCommon
       - tenantConfiguration
@@ -57,12 +57,6 @@ environments:
       - packageActivity
       - infraAppCommon
       - authorizer
-  newLeaf:
-    name: "new-leaf"
-    templateName: "null"
-    workspace: ${WORKSPACE_NAME}-17
-    needs:
-      - pypiArtifacts
   rpmArtifacts:
     name: "rpm-artifacts"
     templateName: "null"
@@ -112,12 +106,12 @@ environments:
     workspace: ${WORKSPACE_NAME}-15
     needs:
       - infraAppCommon
-  #dependencyImporter:
-  # name: "dependency-importer"
-  #  templateName: "null"
-  #  workspace: ${WORKSPACE_NAME}-16
-  #  needs:
-  #    - artifactsManagement
-  #    - packageActivity
+  dependencyImporter:
+    name: "dependency-importer"
+    templateName: "null"
+    workspace: ${WORKSPACE_NAME}-16
+    needs:
+      - artifactsManagement
+      - packageActivity
 settings:
   environmentRemovalStrategy: destroy
