@@ -25,6 +25,7 @@ environments:
     name: "package-activity"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-5
+    revision: ${BRANCH}
     needs:
       - infraAppCommon
       - tenantConfiguration
