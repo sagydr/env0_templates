@@ -1,32 +1,32 @@
 environments:
-  firstRoot:
-    name: "firstRoot"
+  DB:
+    name: "DB"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-1
   secondRoot:
-    name: "secondRoot"
+    name: "EKS"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-2
   firstRootFirstDependency:
-     name: "firstRootFirstDependency"
+     name: "Service1"
      templateName: "null"
      workspace: ${WORKSPACE_NAME}-3
      needs:
        - firstRoot
   firstRootSecondDependency:
-    name: "firstRootSecondDependency"
+    name: "Service2"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-4
     needs:
       - firstRoot
   secondRootFirstDependency:
-    name: "secondRootFirstDependency"
+    name: "Service3"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-5
     needs:
       - secondRoot
   leaf:
-    name: "leaf"
+    name: "Logger"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-6
     needs:
