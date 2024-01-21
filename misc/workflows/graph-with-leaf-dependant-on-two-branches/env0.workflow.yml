@@ -1,5 +1,5 @@
 environments:
-  DB:
+  firstRoot:
     name: "DB"
     templateName: "null"
     workspace: ${WORKSPACE_NAME}-1
