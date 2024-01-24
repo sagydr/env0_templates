@@ -1,25 +1,25 @@
 environments:
   rootService1:
     name: rootService1
-    templateName: 'null sag'
+    templateName: 'null'
   middleService1:
     name: middleService1
-    templateName: 'null sag'
+    templateName: 'null'
     needs:
       - rootService1
   middleService2:
     name: middleService2
-    templateName: 'null resource'
+    templateName: 'null'
     needs:
       - rootService1
   middleService4:
     name: middleService4
-    templateName: 'null sag'
+    templateName: 'null'
     needs:
       - rootService1
   finalService:
     name: finalService
-    templateName: 'null sag'
+    templateName: 'null'
     needs:
       - middleService1
 settings:
