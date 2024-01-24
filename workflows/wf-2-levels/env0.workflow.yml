@@ -1,0 +1,11 @@
+environments:
+  root:
+    name: root
+    templateName: 'null'
+    workspace: ${WORKSPACE_NAME}-1
+  leaf:
+    name: leaf
+    templateName: 'null'
+    workspace: ${WORKSPACE_NAME}-2
+    needs:
+      - root
