@@ -1,0 +1,38 @@
+environments:
+  vpc:
+    name: 'VPC and Network'
+    templateName: 'null'
+  db:
+    name: DB
+    templateName: 'null'
+    needs:
+      - vpc
+  eks:
+    name: EKS
+    templateName: 'null'
+    needs:
+      - vpc
+  service1:
+    name: 'Billing Service'
+    templateName: 'null'
+    disabled: ${DISABLE_SERVICE_1}   # omit service1 deployment,
+                                     # if the interpolated env var DISABLE_SERVICE_1 is true
+    needs:
+      - db
+      - eks
+  service2:
+    name: 'Configuration Service'
+    templateName: 'null' 
+    revision: feature-branch
+    disabled: ${DISABLE_SERVICE_2}
+    needs:
+      - db
+      - eks
+  service3:
+    name: 'Notification Service'
+    templateName: 'null'
+    workspace: env0-workspace
+    disabled: ${DISABLE_SERVICE_3}
+    needs:
+      - db
+      - eks
