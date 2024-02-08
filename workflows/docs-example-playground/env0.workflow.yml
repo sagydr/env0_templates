@@ -7,5 +7,10 @@ environments:
     templateName: 'null'
     needs:
       - vpc
+  eks:
+    name: EKS
+    templateName: 'null switch'
+    needs:
+      - vpc
 settings:
   environmentRemovalStrategy: destroy
