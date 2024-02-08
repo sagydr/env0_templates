@@ -9,9 +9,8 @@ environments:
       - vpc
   eks:
     name: EKS
-    templateName: 'null'
+    templateName: 'null switch'
     needs:
       - vpc
-      - blabla
 settings:
   environmentRemovalStrategy: destroy
