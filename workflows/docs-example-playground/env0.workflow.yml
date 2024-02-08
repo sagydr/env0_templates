@@ -20,19 +20,5 @@ environments:
     needs:
       - db
       - eks
-  service2:
-    name: 'Configuration Service'
-    templateName: 'null' 
-    revision: feature-branch
-    disabled: ${DISABLE_SERVICE_2}
-    needs:
-      - db
-      - eks
-  service3:
-    name: 'Notification Service'
-    templateName: 'null'
-    workspace: env0-workspace
-    disabled: ${DISABLE_SERVICE_3}
-    needs:
-      - db
-      - eks
+settings:
+  environmentRemovalStrategy: destroy
