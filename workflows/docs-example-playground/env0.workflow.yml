@@ -12,13 +12,6 @@ environments:
     templateName: 'null'
     needs:
       - vpc
-  service1:
-    name: 'Billing Service'
-    templateName: 'null'
-    disabled: ${DISABLE_SERVICE_1}   # omit service1 deployment,
-                                     # if the interpolated env var DISABLE_SERVICE_1 is true
-    needs:
-      - db
-      - eks
+      - blabla
 settings:
   environmentRemovalStrategy: destroy
