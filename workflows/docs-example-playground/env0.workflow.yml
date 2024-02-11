@@ -2,13 +2,13 @@ environments:
   vpc:
     name: 'VPC and Network'
     templateName: 'null'
-#  db:
-#    name: DB
-#    templateName: 'null'
-#    needs:
-#      - vpc
-#  eks:
-#    name: EKS
-#    templateName: 'null switch'
-#    needs:
-#      - vpc
+  db:
+    name: DB
+    templateName: 'null'
+    needs:
+      - vpc
+  eks:
+    name: EKS
+    templateName: 'null switch'
+    needs:
+      - vpc
