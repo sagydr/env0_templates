@@ -23,7 +23,6 @@ environments:
   service2:
     name: 'Configuration Service'
     templateName: 'null' 
-    revision: feature-branch
     disabled: ${DISABLE_SERVICE_2}
     needs:
       - db
