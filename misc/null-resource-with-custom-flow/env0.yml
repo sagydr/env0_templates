@@ -7,3 +7,5 @@ deploy:
           run: |
             cat blabla
             ls
+        - name: second
+          run: cat xxxxx
