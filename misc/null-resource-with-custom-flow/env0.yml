@@ -1,6 +1,9 @@
-version: 1
+version: 2
 deploy:
   steps:
-    setupVariables:
-      after:
-        - if [ -z "$MY_VAR" ]; then echo "MY_VAR must be supplied" 1>&2 && exit 1; fi
+    terraformPlan:
+      before:
+        - name: Create random stack name
+          run: |
+            cat blabla
+            ls
