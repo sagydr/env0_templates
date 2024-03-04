@@ -7,8 +7,7 @@ deploy:
           run: |
             sudo apk add graphviz
             terraform graph -type=plan | dot -Tpng > graph.png
-            base64_image=$(base64 -w 0 -i graph.png)
-            echo -n "$base64_image"
+            base64_image=$(base64 -i graph.png)
             formatted_image="\![plan](data:image/png;base64,$base64_image)"
             echo -n "$formatted_image"
             echo -n "$formatted_image" >> $ENV0_STEP_CONTENT
