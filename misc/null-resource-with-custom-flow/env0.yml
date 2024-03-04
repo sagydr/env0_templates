@@ -3,7 +3,7 @@ deploy:
   steps:
     terraformPlan:
       before:
-        - name: tf graph
+        - name: tf plan graph
           run: |
             sudo apk add graphviz
             terraform graph -type=plan | dot -Tpng:gd > graph.png
