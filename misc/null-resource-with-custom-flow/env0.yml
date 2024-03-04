@@ -7,6 +7,6 @@ deploy:
           run: |
             npm install graphviz
             npm install dot
-            yarn add dot-language-support
+            npm -S i dot-language-support
             terraform graph -type=plan | dot -Tpng > graph.png
             base64 -i graph.png >> $ENV0_STEP_CONTENT
