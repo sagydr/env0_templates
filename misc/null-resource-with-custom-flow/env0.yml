@@ -9,4 +9,4 @@ deploy:
             terraform graph -type=plan | dot -Tpng > graph.png
             echo `base64 -i graph.png`
             echo IMAGE
-            echo -ne "\![plan](data:image/png;base64,`base64 -i graph.png`)" >> $ENV0_STEP_CONTENT
+            echo "\![plan](data:image/png;base64,`base64 -w 0 -i graph.png`)" >> $ENV0_STEP_CONTENT
