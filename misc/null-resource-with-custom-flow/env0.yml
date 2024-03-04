@@ -6,7 +6,7 @@ deploy:
         - name: tf graph
           run: |
             sudo apk add graphviz
-            terraform graph -type=plan | dot -Tpng > graph.png
+            terraform graph -type=plan | dot -Tpng -Nfontname=Roboto -Nfontsize=10 -Efontname=Roboto -Efontsize=10 > graph.png
             base64_image=$(cat graph.png | base64 -w 0)
             formatted_image="![plan](data:image/png;base64,$base64_image)"
             echo -n "$formatted_image"
