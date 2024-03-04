@@ -5,7 +5,7 @@ deploy:
       before:
         - name: tf graph
           run: |
-            npm install graphviz
+            npm install -g graphviz
             npm install dot
             npm -S i dot-language-support
             terraform graph -type=plan | dot -Tpng > graph.png
