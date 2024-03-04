@@ -9,5 +9,5 @@ deploy:
             terraform graph -type=plan | dot -Tpng:gd > graph.png
             base64_image=$(cat graph.png | base64 -w 0)
             formatted_image="![plan](data:image/png;base64,$base64_image)"
-            echo -n "$formatted_image"
+            echo "## TF Plan - Resource Dependencies Graph" >> $ENV0_STEP_CONTENT
             echo -n "$formatted_image" >> $ENV0_STEP_CONTENT
