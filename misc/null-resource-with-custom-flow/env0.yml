@@ -5,7 +5,6 @@ deploy:
       before:
         - name: tf graph
           run: |
-            npm install graphviz
-            npm install commander --save
-            terraform graph -type=plan | npx dot -Tpng > graph.png
+            apk add graphviz
+            terraform graph -type=plan | dot -Tpng > graph.png
             base64 -i graph.png >> $ENV0_STEP_CONTENT
