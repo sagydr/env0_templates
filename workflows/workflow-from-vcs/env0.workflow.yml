@@ -1,0 +1,23 @@
+environments:
+  'root1':
+    name: 'root1'
+    vcs:
+      type: 'terraform'
+      terraformVersion: 'latest'
+      repository: 'https://github.com/GiliFaroEnv0/templates'
+      path: 'null-resource'
+      githubInstallationId: 21448713.00
+    workspace: 'roovcxz345345345432f23ft32'
+    revision: 'main'
+  'root2':
+    name: 'root2'
+    vcs:
+      type: 'terraform'
+      terraformVersion: 'latest'
+      repository: 'https://github.com/GiliFaroEnv0/templates'
+      path: 'null-resource'
+      githubInstallationId: 21448713.00
+
+    workspace: 'ro12323423f223f6542f2f23v34f34fv3321'
+    revision: 'main'
+    needs: [ root1 ]
