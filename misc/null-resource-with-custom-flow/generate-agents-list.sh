@@ -22,3 +22,5 @@ else
          end)
     ]' > "$output_file"
 fi
+
+cat $output_file
