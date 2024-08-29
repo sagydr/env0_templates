@@ -1,0 +1,10 @@
+version: 2
+deploy:
+  steps:
+    setupVariables:
+      after:
+        - name: Generate Agents JSON From Agent's Table
+          run: |
+            # This command will generate a JSON file with all agents that are not in the current stage
+            # Removing the agent of the current stage ( dev, prod, prXXXX, etc )
+            ./generate-agents-list.sh
