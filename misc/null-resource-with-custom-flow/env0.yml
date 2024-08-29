@@ -3,6 +3,9 @@ deploy:
   steps:
     setupVariables:
       after:
+        - name: echo TF_VAR_stage
+          run: |
+              echo $TF_VAR_stage
         - name: Generate Agents JSON From Agent's Table
           run: |
             # This command will generate a JSON file with all agents that are not in the current stage
