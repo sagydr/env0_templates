@@ -8,7 +8,7 @@ table_status=$(aws dynamodb describe-table --table-name "$table_name" --query "T
 
 if [ "$table_status" != "ACTIVE" ]; then
     echo "Warning: DynamoDB table '$table_name' does not exist or is not active. Status: '$table_status'"
-    echo "{}" > "$output_file"
+    echo "[]" > "$output_file"
 else
     echo "DynamoDB table EXISTS"
     aws dynamodb scan --table-name "$table_name" --region=us-east-1 --output json | \
