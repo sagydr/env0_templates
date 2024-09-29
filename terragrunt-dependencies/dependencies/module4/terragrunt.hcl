@@ -28,6 +28,8 @@ generate "output" {
   contents = <<EOF
 output "my_value" {
   value = "value"
+  path_FROM = "${get_path_from_repo_root()}"
+  path_TO = "${get_path_to_repo_root()}"
 }
 EOF
 }
