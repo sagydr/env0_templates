@@ -10,5 +10,5 @@ EOF
 
 
 terraform {
-  source = "https://github.com/sagydr/env0_templates.git"
+  source = "https://github.com/env0/templates.git"
 }
