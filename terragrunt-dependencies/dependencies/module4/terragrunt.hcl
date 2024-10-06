@@ -10,7 +10,7 @@ EOF
 
 
 terraform {
-  source = "github.com/HeverFarber/templates.git//misc/null-resource"
+  source = "https://github.com/sagydr/env0_templates//misc/null-resource"
 }
 
 dependency "root" {
