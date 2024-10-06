@@ -10,7 +10,7 @@ EOF
 
 
 terraform {
-  source = "https://github.com/sagydr/env0_templates/tree/9f4549cca8bba5a0baad29856fc070d8ba921959/misc/null-resource"
+  source = "https://github.com/sagydr/env0_templates//misc/null-resource"
 }
 
 dependency "root" {
