@@ -35,5 +35,8 @@ output "path_FROM" {
 output "path_TO" {
   value = "${get_path_to_repo_root()}"
 }
+output "find_IN_PARENT_folder" {
+  value = "${find_in_parent_folders()}"
+}
 EOF
 }
