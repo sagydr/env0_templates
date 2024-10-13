@@ -28,6 +28,13 @@ output "get_TG_dir" {
 output "get_ORIG_WORKDIR" {
   value = "${get_original_terragrunt_dir()}"
 }
+output "path_FROM" {
+  value = "${get_path_from_repo_root()}"
+}
+output "path_TO" {
+  value = "${get_path_to_repo_root()}"
+}
+
 EOF
 }
 

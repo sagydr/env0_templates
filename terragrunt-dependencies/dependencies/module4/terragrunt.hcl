@@ -26,8 +26,8 @@ generate "output" {
   path = "output.tf"
   if_exists = "overwrite_terragrunt"
   contents = <<EOF
-output "my_value" {
-  value = "value"
+output "my_value4" {
+  value = "value4"
 }
 output "find_IN_PARENT_folder" {
   value = "${find_in_parent_folders()}"
@@ -38,5 +38,12 @@ output "get_TG_dir" {
 output "get_ORIG_WORKDIR" {
   value = "${get_original_terragrunt_dir()}"
 }
+output "path_FROM" {
+  value = "${get_path_from_repo_root()}"
+}
+output "path_TO" {
+  value = "${get_path_to_repo_root()}"
+}
+
 EOF
 }
