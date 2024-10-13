@@ -35,9 +35,6 @@ output "find_IN_PARENT_folder" {
 output "get_TG_dir" {
   value = "${get_terragrunt_dir()}"
 }
-output "get_WORKDIR" {
-  value = "${get_working_dir()}"
-}
 output "get_ORIG_WORKDIR" {
   value = "${get_original_terragrunt_dir()}"
 }
