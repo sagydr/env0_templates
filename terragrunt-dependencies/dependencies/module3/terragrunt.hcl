@@ -19,12 +19,6 @@ generate "output" {
 output "my_value" {
   value = var.my_value
 }
-output "FROM" {
-  value = "${get_path_from_repo_root()}"
-}
-output "TO" {
-  value = "${get_path_to_repo_root()}"
-}
 EOF
 }
 
