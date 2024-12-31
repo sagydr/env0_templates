@@ -31,7 +31,7 @@ resource "azurerm_storage_account" "sag_example" {
 
 # Outputs for verification
 output "storage_account_name" {
-  value = azurerm_storage_account.example.name
+  value = azurerm_storage_account.sag_example.name
 }
 
 output "resource_group_name" {
