@@ -67,9 +67,16 @@ terraform {
     b1ddi = {
       source = "infobloxopen/b1ddi"
     }
+    datadog = {
+      source = "DataDog/datadog"
+    }
     google = {
       source = "hashicorp/google"
       version = ">= 4.0.0"
+    }
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      version = ">= 1.0.0"
     }
     alicloud = {
       source = "aliyun/alicloud"
@@ -80,8 +87,15 @@ terraform {
     consul = {
       source = "hashicorp/consul"
     }
+    env0 = {
+      source = "env0/env0"
+    }
     opc = {
       source = "hashicorp/opc"
+    }
+    openstack = {
+      source = "terraform-provider-openstack/openstack"
+      version = "~> 1.53.0"
     }
     nomad = {
       source = "hashicorp/nomad"
