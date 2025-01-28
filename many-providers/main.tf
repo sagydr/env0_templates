@@ -3,40 +3,40 @@ terraform {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "=3.0.0"
-    },
+    }
     alibabacloudstack = {
       source = "aliyun/alibabacloudstack"
       version = "3.18.0"
-    },
+    }
     aci = {
       source = "ciscodevnet/aci"
-    },
+    }
     airbyte = {
       source  = "airbytehq/airbyte"
       version = "0.13.0"
-    },
+    }
     ably = {
       source = "ably/ably"
-    },
+    }
     aembit = {
       source = "aembit/aembit"
-    },
+    }
     aiven = {
       source = "aiven/aiven"
       version = ">= 4.0.0, < 5.0.0"
-    },
+    }
     accuknox = {
       source = "hashicorp/accuknox"
       version = "1.0.0"
-    },
+    }
     akamai = {
       source = "akamai/akamai"
       version = "6.6.0"
-    },
+    }
     alz = {
       source  = "azure/alz"
-      version = "<version>" # change this to your desired version, https://www.terraform.io/language/expressions/version-constraints
-    },
+      version = ">= 0.0.1"
+    }
     anxcloud = {
       source  = "anexia-it/anxcloud"
       version = "~> 0.3"
