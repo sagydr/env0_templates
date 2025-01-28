@@ -22,8 +22,8 @@ terraform {
       version = ">= 4.0.0, < 5.0.0"
     }
     accuknox = {
-      source = "hashicorp/accuknox"
-      version = "1.0.0"
+      source = "accuknox/accuknox"
+      version = ">= 1.0.0"
     }
     akamai = {
       source = "akamai/akamai"
@@ -50,15 +50,12 @@ terraform {
     ah = {
       source = "advancedhosting/ah"
     }
-    aoscx = {
-      source = "aruba/aoscx"
-    }
     appd = {
       source = "cisco-open/appd"
     }
     aquasec = {
       version = "0.8.33"
-      source  = "aquasecurity/aquasec"
+      source = "aquasecurity/aquasec"
     }
     auth0 = {
       source = "auth0/auth0"
