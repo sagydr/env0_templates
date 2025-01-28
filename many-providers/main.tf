@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
+      source = "hashicorp/azurerm"
       version = "=3.0.0"
     }
     alibabacloudstack = {
@@ -10,10 +10,6 @@ terraform {
     }
     aci = {
       source = "ciscodevnet/aci"
-    }
-    airbyte = {
-      source  = "airbytehq/airbyte"
-      version = "0.13.0"
     }
     ably = {
       source = "ably/ably"
@@ -34,36 +30,52 @@ terraform {
       version = "6.6.0"
     }
     alz = {
-      source  = "azure/alz"
+      source = "azure/alz"
       version = ">= 0.0.1"
     }
     anxcloud = {
-      source  = "anexia-it/anxcloud"
+      source = "anexia-it/anxcloud"
       version = "~> 0.3"
     }
     alkira = {
-      source  = "alkira/alkira"
+      source = "alkiranet/alkira"
       version = ">= 1.0.0" # Specify the appropriate version
     }
     apko = {
-      source = "chainguard/apko"
+      source = "chainguard-dev/apko"
     }
     apstra = {
-      source = "apstra/apstra"
+      source = "Juniper/apstra"
     }
     ah = {
-      source = "ah/ah"
+      source = "advancedhosting/ah"
+    }
+    aoscx = {
+      source = "aruba/aoscx"
+    }
+    appd = {
+      source = "cisco-open/appd"
+    }
+    aquasec = {
+      version = "0.8.33"
+      source  = "aquasecurity/aquasec"
+    }
+    auth0 = {
+      source = "auth0/auth0"
     }
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
       version = ">= 4.0.0"
     }
+    b1ddi = {
+      source = "infobloxopen/b1ddi"
+    }
     google = {
-      source  = "hashicorp/google"
+      source = "hashicorp/google"
       version = ">= 4.0.0"
     }
     alicloud = {
-      source  = "aliyun/alicloud"
+      source = "aliyun/alicloud"
     }
     boundary = {
       source = "hashicorp/boundary"
