@@ -90,9 +90,6 @@ terraform {
     env0 = {
       source = "env0/env0"
     }
-    opc = {
-      source = "hashicorp/opc"
-    }
     openstack = {
       source = "terraform-provider-openstack/openstack"
       version = "~> 1.53.0"
