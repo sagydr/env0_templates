@@ -1,7 +1,7 @@
 module "externalGit" {
-  source = "git::https://github.com/cloudposse/terraform-null-label.git?ref=master"
+  source = "git@github.com:hashicorp/example.git"
+}
 
-  namespace  = "example"
-  stage      = "dev"
-  name       = "app"
+module "externalBB" {
+  source = "bitbucket.org/hashicorp/terraform-consul-aws"
 }
