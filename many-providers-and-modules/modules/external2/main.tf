@@ -1,5 +1,5 @@
 module "externalGit" {
-  source = "git@github.com:hashicorp/example.git"
+  source = "github.com/hashicorp/example"
 }
 
 module "externalBB" {
