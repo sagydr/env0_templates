@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.0"
 }
 
-module "external_module" {
+module "externalAws" {
   source = "terraform-aws-modules/s3-bucket/aws"   # Example: An external module from Terraform Registry
   version = "3.15.0"
 

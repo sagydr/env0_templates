@@ -27,3 +27,15 @@ provider "null" {}
 module "mod1" {
   source = "./modules/mod1"
 }
+
+module "modExternal1" {
+  source = "./modules/external1"
+}
+
+module "modExternal2" {
+  source = "./modules/external2"
+}
+
+module "mod4" {
+  source = "./modules/mod4"
+}
