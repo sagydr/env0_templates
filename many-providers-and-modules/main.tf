@@ -43,7 +43,3 @@ module "mod4" {
 module "mod1-1" {
   source = "./modules/mod1/mod1-1"
 }
-
-module "modLocal" {
-  source = "./."
-}
