@@ -45,5 +45,5 @@ module "mod1-1" {
 }
 
 module "modLocal" {
-  source = "."
+  source = "./."
 }
